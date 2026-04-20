@@ -1,0 +1,21 @@
+name: Make Repository Public
+on:
+  schedule:
+    - cron: '0 8 22 4 *' # 1 AM PDT (8 AM UTC) on April 22
+  workflow_dispatch:
+
+jobs:
+  make-public:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Date and Make Public
+        env:
+          GH_TOKEN: ${{ secrets.REPO_PUBLISH_TOKEN }}
+        run: |
+          CURRENT_YEAR=$(date +%Y)
+          if [ "$CURRENT_YEAR" -eq 2026 ] || [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "Making repository public..."
+            gh repo edit ${{ github.repository }} --visibility public --accept-visibility-change-consequences
+          else
+            echo "Skipping: Current year is $CURRENT_YEAR, target is 2026."
+          fi

@@ -25,7 +25,7 @@ A curated list of code samples and tutorials for building agents on **Gemini Ent
     *   **[RAG Engine](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/gemini/rag-engine/intro_rag_engine.ipynb)** - Retrieve relevant enterprise information.
     *   **[Model Context Protocol (MCP)](https://modelcontextprotocol.io/)** - Standard protocol for external tools.
     *   **[Vector Search](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/embeddings/vector-search-2-intro.ipynb)** - Managed vector embedding database.
-    *   **[AI Search (previously Vertex AI Search)](https://docs.cloud.google.com/generative-ai-app-builder/docs/try-enterprise-search)** - Custom search engines for your own data.
+    *   **[Agent Search (previously Vertex AI Search)](https://docs.cloud.google.com/generative-ai-app-builder/docs/try-enterprise-search)** - Custom search engines for your own data.
     *   **[Agent-to-UI (A2UI)](https://a2ui.org)** - Dynamic user interface generation protocol.
     *   **[Agent Payments Protocol (AP2)](https://ap2-protocol.org)** - Secure automated payment execution protocol.
     *   **[Universal Commerce Protocol (UCP)](https://ucp.dev/)** - Standard for managing e-commerce operations.

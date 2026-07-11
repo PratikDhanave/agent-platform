@@ -184,3 +184,13 @@ testem.log
 
 # System files
 Thumbs.db
+.DS_Store
+*.swp
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+dist/
+build/
+.next/
